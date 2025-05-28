@@ -55,4 +55,22 @@ export default tseslint.config({
 # PNL-WEB88-project -->
 
 # Horizon - A human resource management system for companies
-This web application will solve problems that some companies are dealing with. With several features such as **build task**, **rank comparison**, **profile management**, etc., lead a business can never been easier.
+
+This web application will solve problems that some companies are dealing with. With several features such as **build task**, **rank comparison**, **profile management**, etc., leading a business can never been easier.
+
+## Features:
+
+- **Login page**: 
+- **Profile management**:
+- **Task management**:
+- **Project management**:
+- **Ranking comparison**:
+
+## Technologies used:
+
+- **Frontend**: React + Vite + Typescript
+- **Backend**: Express
+- **Database**: MongoDB
+
+## Developers:
+- **Nguyen Huu Anh Duc**: Fullstack (Frontend + Backend)
