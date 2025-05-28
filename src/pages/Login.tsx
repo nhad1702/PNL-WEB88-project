@@ -1,8 +1,15 @@
 import '../styles/Login.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { TextField, Box, Button } from '@mui/material'
 
 const Login = () => {
+
+    const navigate = useNavigate()
+
+    const handleLogin = () => {
+        navigate('/home')
+    }
+
   return (
     <>
         <div className='w-full h-screen flex items-center justify-center'>
@@ -19,7 +26,7 @@ const Login = () => {
                         <span>Forgot password? <Link to='/forgot-password'>Click here</Link></span>
                     </div>
                     <div className='my-3'>
-                        <Button variant='contained' className='w-[20rem]'>Login</Button>
+                        <Button variant='contained' className='w-[20rem]' onClick={handleLogin}>Login</Button>
                     </div>
                 </div>
             </Box>

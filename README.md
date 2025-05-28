@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+<!-- # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -52,4 +52,7 @@ export default tseslint.config({
   },
 })
 ```
-# PNL-WEB88-project
+# PNL-WEB88-project -->
+
+# Horizon - A human resource management system for companies
+This web application will solve problems that some companies are dealing with. With several features such as **build task**, **rank comparison**, **profile management**, etc., lead a business can never been easier.
