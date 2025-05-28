@@ -72,5 +72,4 @@ This web application will solve problems that some companies are dealing with. W
 - **Backend**: Express
 - **Database**: MongoDB
 
-## Developers:
-- **Nguyen Huu Anh Duc**: Fullstack (Frontend + Backend)
+## Developers: **Nguyen Huu Anh Duc**: Fullstack (Frontend + Backend)
