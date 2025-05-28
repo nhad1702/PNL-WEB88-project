@@ -1,70 +1,15 @@
-<!-- # React + TypeScript + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-# PNL-WEB88-project -->
-
 # Horizon - A human resource management system for companies
 
 This web application will solve problems that some companies are dealing with. With several features such as **build task**, **rank comparison**, **profile management**, etc., leading a business can never been easier.
 
 ## Features:
 
-- **Login page**: 
-- **Profile management**:
-- **Task management**:
-- **Project management**:
-- **Ranking comparison**:
+- **Login page**: Secure authentication for users
+- **Dashbord**: Show some shorten features
+- **Profile management**: Adjust user's profile details
+- **Task management**: Add, show and update tasks
+- **Project management**: Overview of the entire projects including details
+- **Ranking comparison**: Compare user rankings and achivement
 
 ## Technologies used:
 
@@ -72,4 +17,10 @@ This web application will solve problems that some companies are dealing with. W
 - **Backend**: Express
 - **Database**: MongoDB
 
-## Developers: **Nguyen Huu Anh Duc**: Fullstack (Frontend + Backend)
+## Github links:
+- **Frontend**: https://github.com/nhad1702/PNL-WEB88-project
+- **Backend**: https://github.com/nhad1702/PNL-WEB88
+
+## Deploy: 
+
+## Developers: **Nguyen Huu Anh Duc**: Fullstack (Frontend + Backend + Database)
