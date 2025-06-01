@@ -1,13 +1,15 @@
 import { useState } from 'react'
-import { Tooltip, IconButton, Button } from '@mui/material'
+import { Button } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import LogoutIcon from '@mui/icons-material/Logout'
 import PersonIcon from '@mui/icons-material/Person'
 import AllInboxIcon from '@mui/icons-material/AllInbox'
 import TaskIcon from '@mui/icons-material/Task'
+import PeopleIcon from '@mui/icons-material/People'
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import SettingsIcon from '@mui/icons-material/Settings'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 import '../styles/Sidebar.css'
 
 const Sidebar = () => {
@@ -15,7 +17,10 @@ const Sidebar = () => {
     const navigate = useNavigate()
 
     const handleSignOut = () => {
-        return navigate('/')
+        localStorage.removeItem('token')
+        localStorage.removeItem('role')
+        delete axios.defaults.headers.common['Authorization']
+        navigate('/')
     }
 
     const handleSidebarToggle = () => {
@@ -46,6 +51,7 @@ const Sidebar = () => {
                     { icon: <TaskIcon sx={{ height: 50, width: 50 }} />, label: "Task" },
                     { icon: <EmojiEventsIcon sx={{ height: 50, width: 50 }} />, label: "Rank" },
                     { icon: <SettingsIcon sx={{ height: 50, width: 50 }} />, label: "Settings" },
+                    { icon: <PeopleIcon sx={{ height: 50, width: 50 }} />, label: 'Manage' },
                 ].map((item, idx) => (
                     <Button key={idx}
                         sx={{
