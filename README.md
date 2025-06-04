@@ -10,11 +10,12 @@ This web application will solve problems that some companies are dealing with. W
 - **Task management**: Add, show and update tasks
 - **Project management**: Overview of the entire projects including details
 - **Ranking comparison**: Compare user rankings and achivement
+- **Manage employee**: Manage employee's role (for admin only)
 
 ## Technologies used:
 
 - **Frontend**: React + Vite + Typescript
-- **Backend**: Express
+- **Backend**: ExpressJs
 - **Database**: MongoDB
 
 ## Github links:

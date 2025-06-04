@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Forgot from './pages/Forgot'
-import Home from './pages/Home'
+import Home from './pages/HomePage/Home'
 
 function App() {
   return (

@@ -1,12 +1,16 @@
 import { useEffect } from "react"
-import Sidebar from "../components/Sidebar"
-import API from "../api/axiosConfig"
+import Sidebar from "../../components/Sidebar"
+import API from "../../api/axiosConfig"
 import { toast } from "react-toastify"
 import { useNavigate } from "react-router-dom"
+import Profile from "../../components/Profile"
 
 const Home = () => {
 
   const navigate = useNavigate()
+
+  const role = localStorage.getItem('role') || ''
+  console.log(role)
 
   useEffect(() => {
     const checkLogin = async () => {
@@ -23,8 +27,11 @@ const Home = () => {
   }, [navigate])
 
   return (
-    <div className="w-full h-full">
-      <Sidebar />
+    <div className="w-full h-full flex">
+      <Sidebar role={role} />
+      <div className="w-full flex flex-row items-center p-5">
+        <Profile />
+      </div>
     </div>
   )
 }
