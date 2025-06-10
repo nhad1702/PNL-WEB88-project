@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { RadarChart } from '@mui/x-charts/RadarChart'
-import API from '../api/axiosConfig'
+import API from '../../api/axiosConfig'
 
 const getRadarMaxandRank = (total: number) => {
     if (total < 500) return { max: 500, rank: 'E' }

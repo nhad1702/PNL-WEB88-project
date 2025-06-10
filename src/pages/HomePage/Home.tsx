@@ -1,9 +1,9 @@
 import { useEffect } from "react"
-import Sidebar from "../../components/Sidebar"
+import Sidebar from "../../components/Sidebar/Sidebar"
 import API from "../../api/axiosConfig"
 import { toast } from "react-toastify"
-import { useNavigate } from "react-router-dom"
-import Profile from "../../components/Profile"
+import { useNavigate, Routes, Route } from "react-router-dom"
+import Dashboard from "../Dashboard/Dashboard"
 
 const Home = () => {
 
@@ -27,10 +27,13 @@ const Home = () => {
   }, [navigate])
 
   return (
-    <div className="w-full h-full flex">
+    <div className="w-full h-full flex items-center">
       <Sidebar role={role} />
-      <div className="w-full flex flex-row items-center p-5">
-        <Profile />
+      <div className="w-full h-full flex items-center justify-center">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            {/* Add more routes as needed */}
+          </Routes>
       </div>
     </div>
   )

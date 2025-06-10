@@ -11,7 +11,7 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import SettingsIcon from '@mui/icons-material/Settings'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import '../styles/Sidebar.css'
+import './Sidebar.css'
 
 interface SidebarProps {
     role: string

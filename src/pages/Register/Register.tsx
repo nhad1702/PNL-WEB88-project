@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { TextField, Box, Button, FormControl, InputLabel, MenuItem, Select } from '@mui/material'
 import { useNavigate, Link } from 'react-router-dom'
-import API from '../api/axiosConfig'
+import API from '../../api/axiosConfig'
 import { toast } from 'react-toastify'
 
 interface Errors {

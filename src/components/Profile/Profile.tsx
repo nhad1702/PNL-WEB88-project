@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { LinearProgress, Box, Typography } from '@mui/material'
-import API from '../api/axiosConfig'
+import API from '../../api/axiosConfig'
 import ProfileRadar from './ProfileRadar'
 
 type User = {

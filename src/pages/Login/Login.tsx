@@ -3,8 +3,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import { TextField, Box, Button } from '@mui/material'
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import API from '../api/axiosConfig' // Make sure this is correct
-import '../styles/Login.css'
+import API from '../../api/axiosConfig' // Make sure this is correct
+import './Login.css'
 
 const Login = () => {
     const navigate = useNavigate()
